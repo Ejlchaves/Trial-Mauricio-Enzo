@@ -8,39 +8,56 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <div class="divContainer">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
-
     <form action="#" id="survey-form">
         <div>
             <label for="name" id="name-label">Enter your name</label>
+            <br>
             <input type="text" name="name" id="name" placeholder="Name">
         </div>
         <div>
             <label for="email" id="email-label">Enter your email</label>
+            <br>
             <input type="email" name="email" id="email" placeholder="Email">
         </div>
         <div>
             <label for="number" id="number-label">Enter your number</label>
+            <br>
             <input type="number" name="number" id="number" placeholder="Number" min="0" max="99" required>        
         </div>
         <div>
-            <select name="" id="dropdown">option</select>
+            <select name="" id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Remote">Remote</option>
+                <option value="Other">Other</option>
+            </select>
         </div>
         <div>
-            <label for="radio"> <input type="radio" name="radio" id="" value=""> Definitely </label>
-            <label for="radio"> <input type="radio" name="radio" id="" value=""> Maybe </label>
+            <label for="radio"> <input type="radio" name="radio" id="" value="" required> Definitely </label>
+            <br>
+            <label for="radio"> <input type="radio" name="radio" id="" value="" required> Maybe </label>
         </div>
         <div>
-            <select name="" id="dropdown1">option</select>
+            <select name="" id="dropdown1">
+                <option value="Challenges">Challenges</option>
+                <option value="projects">Project</option>
+                <option value="communities">communities</option>
+                <option value="openSource"> Open Source</option>
+            </select>
         </div>
         <div>
             <textarea name="textarea" id="" cols="30" rows="10" placeholder="Enter you comment here"></textarea>
         </div>
         <div>
-            <input type="submit" id="submit" value="">
+            <input type="submit" id="submit" value="Submit">
         </div>
 
     </form>
+    </div>
+    
 </body>
 </html>
