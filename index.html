@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="divContainer">
-        <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form action="#" id="survey-form">
-        <div>
-            <label for="name" id="name-label">Enter your name</label>
-            <br>
-            <input type="text" name="name" id="name" placeholder="Name">
-        </div>
-        <div>
-            <label for="email" id="email-label">Enter your email</label>
-            <br>
-            <input type="email" name="email" id="email" placeholder="Email">
-        </div>
-        <div>
-            <label for="number" id="number-label">Enter your number</label>
-            <br>
-            <input type="number" name="number" id="number" placeholder="Number" min="0" max="99" required>        
-        </div>
-        <div>
-            <select name="" id="dropdown">
-                <option value="Student">Student</option>
-                <option value="Full-time">Full-time</option>
-                <option value="Part-time">Part-time</option>
-                <option value="Remote">Remote</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-        <div>
-            <label for="radio"> <input type="radio" name="radio" id="" value="" required> Definitely </label>
-            <br>
-            <label for="radio"> <input type="radio" name="radio" id="" value="" required> Maybe </label>
-        </div>
-        <div>
-            <select name="" id="dropdown1">
-                <option value="Challenges">Challenges</option>
-                <option value="projects">Project</option>
-                <option value="communities">communities</option>
-                <option value="openSource"> Open Source</option>
-            </select>
-        </div>
-        <div>
-            <textarea name="textarea" id="" cols="30" rows="10" placeholder="Enter you comment here"></textarea>
-        </div>
-        <div>
-            <input type="submit" id="submit" value="Submit">
-        </div>
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-    </form>
-    </div>
-    
-</body>
+  <body>
+    <div class="divContainer">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form action="#" id="survey-form">
+      <div >
+          <label for="name" id="name-label">Enter your name</label>
+          <br>
+          <input id="name" type="text"  name="name"  placeholder="Name input field should be required ">
+      
+      <div>
+          <label for="email" id="email-label">Enter your email</label>
+          <br>
+          <input type="email" name="email" id="email" placeholder="Email input field should be required ">
+      </div>
+      <div>
+          <label for="number" id="number-label">Enter your number</label>
+          <br>
+          <input type="number" name="number" id="number" placeholder="Number" min="0" max="99" required>        
+      </div>
+      <div>
+          <select name="" id="dropdown">
+              <option value="Student">Student</option>
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Remote">Remote</option>
+              <option value="Other">Other</option>
+          </select>
+      </div>
+      <div>
+          <input type="checkbox" name="radio" id="" value="" required>        
+          <label for="radio"> Definitely </label>
+          <br>
+          <input type="checkbox" name="radio" id="" value="" required>          
+          <label for="radio"> Maybe </label>
+          <input type="radio">
+          <input type="radio">s
+      </div>
+      <div>
+          <select name="" id="dropdown1">
+              <option value="Challenges">Challenges</option>
+              <option value="projects">Project</option>
+              <option value="communities">communities</option>
+              <option value="openSource"> Open Source</option>
+          </select>
+      </div>
+      <div>
+          <textarea name="textarea" id="" cols="30" rows="10" placeholder="Enter you comment here"></textarea>
+      </div>
+      <div>
+          <input type="submit" id="submit" value="Submit">
+      </div>
+
+  </form>
+  </div>
+  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <script  src="js/index.js"></script>
+  </body>
 </html>
